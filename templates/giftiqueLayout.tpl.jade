@@ -1,0 +1,43 @@
+.span6
+  ul.nav.nav-tabs
+    li.active
+      a.all(href='#all', data-toggle='tab') All
+    li
+      a(href='#travel', data-toggle='tab')
+        span.hidden-desktop
+          i.icon-globe(title='Travel')
+        span.visible-desktop Travel
+    li
+      a(href='#places', data-toggle='tab')
+        span.hidden-desktop
+          i.icon-road(title='Places')
+        span.visible-desktop Places
+    li
+      a(href='#food_drink', data-toggle='tab')
+        span.hidden-desktop
+          i.icon-glass(title='Food/Drink')
+        span.visible-desktop Food/Drink
+    li
+      a(href='#hobbies', data-toggle='tab')
+        span.hidden-desktop
+          i.icon-heart(title='Hobbies')
+        span.visible-desktop Hobbies
+    li
+      a(href='#activities', data-toggle='tab')
+        span.hidden-desktop
+          i.icon-book(title='Activities')
+        span.visible-desktop Activities
+    li
+      a(href='#art_entertainment', data-toggle='tab')
+        span.hidden-desktop
+          i.icon-film(title='Art/Entertainment')
+        span.visible-desktop Art/Entertainment
+  #question
+  .progress.hide
+    .bar-label
+    #bar.bar
+  small
+    | The term 'Etsy' is a trademark of Etsy, Inc.
+    br
+    | 		This application uses the Etsy API but is not endorsed or certified by Etsy, Inc.
+#products.span6
