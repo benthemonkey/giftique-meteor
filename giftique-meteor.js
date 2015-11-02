@@ -8,6 +8,12 @@ if (Meteor.isClient) {
       console.log(event.target[0].value);
     }
   });
+
+  // render a question?
+  var q = questions[0];
+  // need helpers to turn string comparisons into bools
+  q.isShortAnswer = q.type == 'short-answer';
+  Template.question.helpers(q);
 }
 
 if (Meteor.isServer) {

@@ -1,0 +1,12 @@
+.question
+  .question-body
+    p.question-category #{category} Questions: #{description}
+    if isShortAnswer
+      p.question-text #{content}
+    else
+      p.question-text #{content[0]} ___________ #{content[1]}
+  .text-right.question-input
+    input.input.myinput(type='text', placeholder=options.placeholder, required='')
+.form-actions.text-right
+  button.btn.shuffle(type='button') Different Question
+  button.btn.btn-primary.submit(type='submit') Submit
